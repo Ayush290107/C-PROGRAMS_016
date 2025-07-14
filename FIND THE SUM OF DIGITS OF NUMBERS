@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int num, sum = 0, digit;
+
+    // ek number dalo
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    // ek copy banao original ko preserve karne ke liye agar need pade
+    int original = num;
+
+    // negative numbers ko handle karo
+    if (num < 0) {
+        num = -num;
+    }
+
+    // Calculate karo digits ka sum
+    while (num != 0) {
+        digit = num % 10;
+        sum += digit;
+        num /= 10;
+    }
+
+    // result show karo
+    printf("Sum of digits of %d is %d\n", original, sum);
+
+    return 0;
+}

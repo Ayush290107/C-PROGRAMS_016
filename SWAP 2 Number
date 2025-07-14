@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, temp;
+
+    // 2 number dalo
+    printf("Enter the first number (a): ");
+    scanf("%d", &a);
+
+    printf("Enter the second number (b): ");
+    scanf("%d", &b);
+
+    // display karo swap karne se pehle
+    printf("\nBefore swapping:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    // Swap karo temporary variable ka use karke
+    temp = a;
+    a = b;
+    b = temp;
+
+    // Display karo swap karne ke baad
+    printf("\nAfter swapping:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    return 0;
+}

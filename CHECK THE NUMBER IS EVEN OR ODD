@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    // ek number dalo
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // check karo number even hai ya odd
+    if (num % 2 == 0) {
+        printf("%d is even.\n", num);
+    } else {
+        printf("%d is odd.\n", num);
+    }
+
+    return 0;
+}

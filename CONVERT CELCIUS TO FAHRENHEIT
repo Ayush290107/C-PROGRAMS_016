@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float celsius, fahrenheit;
+
+    // temperature dalo Celsius me
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    // Convert karo Fahrenheit me
+    fahrenheit = (celsius * 9 / 5) + 32;
+
+    // result show karo
+    printf("%.2f Celsius = %.2f Fahrenheit\n", celsius, fahrenheit);
+
+    return 0;
+}
